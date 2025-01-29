@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --green: #46c56c;
+    --darkgreen: #217139;
+    --lightgreen: #b5ffcb;
+}
+
+/* container */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: var(--darkgreen);
+    align-items: center;
+    justify-content: center;
+}
+
+/* calculator */
+.calculator {
+    display: flex;
+    background: var(--green);
+    padding: 20px;
+    border-radius: 10px;
+}
