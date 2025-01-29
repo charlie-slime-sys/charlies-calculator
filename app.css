@@ -11,6 +11,7 @@
     --green: #46c56c;
     --darkgreen: #217139;
     --lightgreen: #b5ffcb;
+    --blue: #00aaad;
 }
 
 /* container */
@@ -29,4 +30,40 @@
     background: var(--green);
     padding: 20px;
     border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--lightgreen);
+    font-size: 20px;
+    color: var(--darkgreen);
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: -5px -5px 15px var(--darkgreen);
+}
+
+/* input / display */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+form input.operator {
+    color: var(--blue);
 }
